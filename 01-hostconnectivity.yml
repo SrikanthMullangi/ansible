@@ -4,7 +4,3 @@
   tasks:
     - name: ping Testing
       ansible.builtin.ping
-
-    - name: print ping_result
-      ansible.builin.debug
-        msg: "Hi this is test"
