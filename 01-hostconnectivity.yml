@@ -1,0 +1,7 @@
+- name : Testing connectvty to Host
+  hosts: fronend
+
+  tasks:
+    - name : ping Testing
+      ansible.builtin.ping
+   
