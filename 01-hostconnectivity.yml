@@ -7,4 +7,4 @@
 
     - name: print ping_result
       ansible.builin.debug
-        msg: Hi this is test
+        msg: "Hi this is test"
