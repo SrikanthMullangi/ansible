@@ -4,8 +4,7 @@
   tasks:
     - name: ping Testing
       ansible.builtin.ping
-        register: ping_result
 
     - name: print ping_result
       ansible.builin.debug
-        msg: {{ ping_result }}
+        msg: Hi this is test
