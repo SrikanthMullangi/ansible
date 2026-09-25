@@ -1,0 +1,13 @@
+- name: functions
+  hosts: local
+  connection: local
+  vars:
+    technologies: DevOps, Linux, Shell, AWS #String
+  tasks:
+  - name: default variables
+    ansible.builtin.debug:
+      msg: "Hello {{name | default('Ra,esh') }}"
+
+  - name: String to list
+    debug:
+      msg: "Tecahnologies are : {{ technologies | split(',')  }}"
